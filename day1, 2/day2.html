@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
-        <link rel="icon" type="image/png" href="/image/meme.png">
+        <link rel="icon" type="image/png" href="../image/meme.png">
     </head>
     <body>
         <h3><span style="background-color:rgb(248, 247, 247)">this is a span title</span></h3>
@@ -50,15 +50,54 @@
             </tr>
         </table>
         <hr>
-        <a href="https://youtube.com" target="_blank"   >
-        <button style="font-size:30px; background-color:grey; color:yellow">click me</button>
+        <a href="https://youtube.com" target="_blank"git >
+            <button style="font-size:30px; background-color:grey; color:yellow">click me</button>
         </a>
         <hr>
         <form action="index.php" method="POST">
             <label for="username"> Username: </label>
-            <input type="text" id="username" placeholder="Bin" minlength="6" required><br>
+            <input type="text" id="username" placeholder="Bin" minlength="6" ><br>
+
             <label for="password">Password: </label>
             <input type="password" id="password" minlength="6" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="abc123@gmail.com"><br>
+
+            <label for="phone">Phone: </label>
+            <input type="phone" id="phone" placeholder="0123456789" pattern="[0-9]{10}"><br>
+
+            <label for="birthday">Birthdate:</label>
+            <input type="date" id="birthday" ><br>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" value="1" min="0"><br>
+
+            <label for="title">Title:</label>
+
+            <label for="mr">Mr.</label>
+            <input type="radio" id="mr" name="title">
+            <label for="ms">Ms.</label>
+            <input type="radio" id="ms" name="title">
+            <label for="phd">PhD.</label>
+            <input type="radio" id="phd" name="title"><br>
+
+            <label for="payment">Payment:</label>
+            <select id="payment">
+                <option value="visa">Visa</option>
+                <option value="mscard">Mastercard</option>
+                <option value="cash">Cash</option>
+            </select><br>
+
+            <label for="agree">Are you agree?</label>
+            <input type="checkbox" id="agree" name="title"><br>
+
+            <label for="comment">Comment: </label>
+            <textarea rows="" cols="" type="comment" rows="3" cols="25"></textarea><br>
+
+            <label for="file">File</label>
+            <input type="file" id="file" accept="image/png, image/jpeg"><br>
+
             <input type="submit">
             <input type="reset">
         </form>

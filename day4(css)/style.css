@@ -1,0 +1,50 @@
+body{
+    background-color: rgba(11, 11, 11, 0.381);
+    border-top: 3px solid red;
+    border-bottom: 3px solid yellow;
+    border-left: 3px dotted rgb(250, 104, 7);
+    border-right: 3px dotted #02fa44;
+    display: flow-root;/* tránh hình ảnh tràn khỏi viền ngoài */
+}   
+h1{
+    color:rgb(239, 247, 12);
+    border-style: solid; /* dashed, dotted, double, groove, rigde, inset, outset, none */
+    border-width: 5px;
+    border-color: white;
+    border-radius: 10px
+    /* border: 5px solid white*/
+}
+#p1{
+    color:blue
+}
+#p2{
+    color:yellow
+}
+.odd{
+    color:rgb(250, 104, 7)
+}
+.even{
+    color:#02fa44
+}
+p{
+    font-family: arial;
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+}
+.box{
+    border: 5px solid;
+    font-size: 5em;
+    width: 150px;
+    height: 150px;
+}
+#box1{
+    background-color: rgba(244, 39, 39, 0.381);
+    margin-bottom: 50px;
+    float: left;
+}
+#box2{
+    background-color: rgba(30, 248, 248, 0.381);
+    margin-left: auto;
+    float: right;
+} 

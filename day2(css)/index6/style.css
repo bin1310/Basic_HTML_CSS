@@ -1,0 +1,17 @@
+.gallery{
+    display: inline-block;
+    border: 1px solid rgb(199, 199, 199);
+    margin: 5px;
+    width: 250px; /*Cố định chiều rộng của toàn bộ khung gallery là 250px.*/
+}
+.gallery .description{
+    text-align: center;
+    padding: 10px;
+}
+.gallery:hover{
+    border: 1.5px solid grey;
+}
+.gallery img{
+    width: 100%;/*Ép chiều rộng bức ảnh luôn vừa khít 100% chiều rộng của khung cha (.gallery = 250px).*/
+    height: auto;/*Tự động tính toán chiều cao theo đúng tỉ lệ của ảnh gốc để không bị méo hay xẹp ảnh.*/
+}

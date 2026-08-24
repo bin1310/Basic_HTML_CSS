@@ -1,0 +1,72 @@
+body{
+    background-image: url(../../image/images.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column; /* Thêm dòng này để xếp các phần tử từ trên xuống dưới */
+    justify-content: center;
+    align-items: left ;
+    margin-top: 50px;
+}
+
+/* pseudo class */
+a:link{
+    color: rgb(59, 148, 249)
+}
+a:hover{
+    color: rgb(10, 6, 248);
+    font-size: 1.1em;
+}
+a:active{
+    color: red;
+    font-size: 1.1em;
+}
+li:hover{
+    background-color: rgb(241, 241, 93)
+}
+/* li:nth-child(n){
+    background-color: yellow)
+    nhóm số lượng n các dòng cùng màu.
+*/
+
+#greet p{
+    background-color: rgb(110, 216, 255);
+    padding: 10px;
+    display: none;
+}
+#greet:hover p{
+    display: block;
+}
+
+/* pseudo element*/
+h1::first-letter{
+    font-size: 2em;
+    font-style: italic;
+}
+p::first-line{
+    background-color: rgb(102, 247, 102);
+}
+p::selection{
+    color: rgb(191, 249, 74);
+    background-color: rgb(102, 101, 101);
+}
+/* #language li::before{
+    
+} */
+#c::after{
+    content: "cpp";
+}
+#js::after{
+    content: " javascript";
+}
+#py::after{
+    content: " python";
+}
+#language li::marker{
+    content:"✓ ";
+    color: rgb(245, 43, 43);
+    font-size: 1.2em;
+}

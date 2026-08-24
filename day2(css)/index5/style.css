@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+header{
+    text-align: center;
+    background-color: rgb(222, 222, 222);
+    padding: 25px
+}
+.navbar{
+    background-color: rgb(141, 140, 140);
+    height: 50px;
+}
+aside{
+    padding: 10px;
+    width: 20%;
+    float: left;
+}
+section{
+    padding: 10px;
+    width: 40%;
+    float: left;
+}
+article{
+    padding: 10px;
+    width: 40%;
+    float: left;
+}
+footer{
+    text-align: center;
+    clear: both;
+    background-color: rgb(222, 222, 222);
+    padding: 25px;
+    display:block;
+} 
+
+@media screen and (max-width:600px){
+    aside, section, article{
+        width: 100%;
+    }
+}
